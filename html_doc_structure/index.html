@@ -1,0 +1,150 @@
+<!-- What is HTML?
+ HTML = HyperText Markup Language
+ It is used to define the structure and meaning of content on a webpage.
+ 
+ Such as in a human body:
+ HTML → Skeleton, CSS → Clothes, Javascript → Movement
+ 
+ For Example: 
+-->
+
+<h1>Hello World</h1>
+<p>This is my first webpage</p>
+
+<!-- HTML tells the browser:
+ "This is a heading and this is a paragraph" 
+ It doesn't tell the browser how beautiful they should look. That's CSS's job. 
+-->
+
+<!-- HTML ELEMENTS
+ This below is a paragraph element.
+ It consists of: <p>  Hello  </p>
+                  ↓     ↓      ↓ 
+       [opening tag] [Content] [Closing Tag] 
+ Together, these form an element
+-->
+
+<p>Hello</p>
+ 
+<!-- Another Example: 
+ <h1> → Tag
+ <h1>My Website<h1> → Element
+ -->
+
+<h1>My Website</h1>
+
+<!--  THE BASIC HTML DOCUMENT -->
+
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1>Hellow World</h1>
+        <p>Welcome to my website.</p>
+    </body>
+</html>
+
+<!-- BREAKDOWN:
+<!DOCTYPE html> → Tells the browser "This document uses modern HTML". 
+        It isn't an HTML element. It goes at the very beginning.
+<html>  → Root Element. Everything in the page goes inside it. 
+        <html> 
+        ...
+        </html>
+<head>  → The <head> element in HTML is a container for css files, SEO related info, 
+        Metadata (data about data) that provides crucial machine-readable information about a webpage. 
+        It is placed between the opening <html> tag and the <body> tag. Unlike the content in the <body>, 
+        the information inside the <head> is not displayed directly on the webpage, except for the 
+        page title shown in the browser tab
+<title> → Defines the Page Title shown in browser tab, not displayed inside the webpage itself.
+<body>  → This is where the actual webpage content goes. Things users see and interact with generally belong here.
+-->
+
+<!-- NESTING
+ HTML elements can exist inside other elements.
+ Example: html
+            |
+            ---body
+                |
+                ---h1
+                ---p
+ Body is the parent of h1 & p. h1 & p are children of body.
+-->
+
+<p id="intro">Hello World</p>
+<!-- ATTRIBUTES
+HTML elements can have additional information called attributes.
+Here: id → element
+      "intro" → attribute value
+-->
+
+<html lang="en"></html>
+<!-- lang = attribute, "en" = attribute value -->
+
+
+<!-- HEADINGS(<h1> to <h6>) HTML provides 6 levels of headings -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>myTitle</title>
+    </head>
+    <body>
+        <!-- PARAGRAPH → contains blocks of text
+         each paragraph starts on a new line automatically. -->
+        <h1>HTML provides 6 levels of headings</h1>
+        <h1>Main Heading</h1>
+        <h2>Section Heading</h2>
+        <h3>Subsection</h3>
+        <h4>Smaller Heading</h4>
+        <h5>Minor Heading</h5>
+        <h6>Smallest Heading</h6>
+        <!-- Line Break → Need a line inside the same paragraph? use this -->
+        <p>Hello<br>World</p>
+        <!-- Horizontal Rule → Creates a thematic break between sections 
+            a thin horizontal line spanning the full width of its container -->
+        <h2>Chapter 1</h2>
+        <p>Introduction...</p>
+        <hr>
+        <h2>Chapter 2</h2>
+        <!-- Text Formatting Tags →  
+            <strong> → stong importance(bold) semantic meaning difference verbally for screen readers
+            <em> → emphasis(italic) semantic meaning difference verbally for screen readers
+            <b> → bold
+            <i> → italic 
+            <mark> → Highlights Text
+            <small> → Displays Text Smaller
+            <del> → shows deleted text
+            <ins> → Shows inserted text
+            <sub> → Subscript
+            <sup> → Superscript
+        -->
+        <p>This is <strong>importance</strong>.</p>
+        <p>Please <em>read carefully</em>.</p>
+        <b>Bold Text</b>
+        <i>Italic Text</i>
+        <p>This is <mark>important</mark>.</p>
+        <br>
+        <small>Terms and conditions apply.</small>
+        <br>
+        <del>$999</del>
+        <br>
+        <ins>$699</ins>
+        <h3>H<sub>2</sub>O</h3>
+        <h3><sup>H</sup>2<sup>O</sup></h3>
+        <h3>2<sup>10</sup></h3>
+        <p><strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers</p>
+        <p><p><strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers
+        </p>
+        <p><strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers
+        </p><p><strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers</p></p>
+        </p>
+        <p><strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers
+        <br><strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers<strong> → stong importance(bold) semantic meaning difference verbally for screen readers</p></p>
+
+    </body>
+</html>
+
+
+
