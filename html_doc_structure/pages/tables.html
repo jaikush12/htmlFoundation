@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- /TABLE - has <tr> = Table Row
+                          <th> = Table Head 
+                          <td> = Table Data  -->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>22</td>
+                <td>New Delhi</td>
+            </tr>
+            <tr>
+                <td>XYZ</td>
+                <td>23</td>
+                <td>Bangalore</td>
+            </tr>
+        </table>
+        <!-- <thead> → contains header rows
+             <tbody> → contains main data
+             <tfoot> → contains summary/footer info    -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>$50,000</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>$25,000</td>
+                </tr>
+            </tbody>    
+            <tfoot>
+                <tr>
+                    <th>Total</td>
+                    <th>$75,000</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- colspan - for when one cell needs to cover multiple columns horizontally -->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>95</td>
+                <td>12th</td>
+            </tr>
+            <tr>
+                <td colspan="3">End of Results</td>
+            </tr>
+        </table>
+        <!-- rowspan - for when one cell needs to cover multiple columns vertically   -->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td rowspan="2">ABC</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+            </tr>
+        </table> 
+    </body>
+</html>
