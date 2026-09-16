@@ -1,0 +1,82 @@
+<!-- INPUT TYPES -->
+<!Doctype html>
+<html>
+    <body>
+        <!-- type tells the browser what kind of data the user is expected to enter -->
+        <!-- 1. TEXT -->
+        <input type="text">
+        <br>
+        <!-- Email -->
+        <input type="email">
+        <br>
+        <!-- For Example -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <!-- PASSWORD -->
+        <input type="password">
+        <br>
+        <!-- Characters are hidden while typing, for example -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <!-- NUMBER -->
+        <input type="number">
+        <br>
+        <!-- For numberic value, for example -->
+        <label for="number">Age</label>
+        <input type="number" id="number" name="age" min="18" max="100">
+        <br>
+        <!-- TEL -->
+        <label for="tel">Telephone</label>
+        <input type="tel" id="tel" name="phone">
+        <br>
+        <!-- DATE -->
+        <input type="date">
+        <br>
+        <!-- for example -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <!-- TIME -->
+        <input type="time">
+        <br>
+        <label for="time" >Time</label>
+        <input type="time" id="time" name="appointment">
+        <br>
+        <!-- URLs -->
+        <label for="url">URLs</label>
+        <input type="url" name="website"> 
+        <br>
+        <!-- SEARCH -->
+        <label for="search">Search</label>
+        <input type="search" id="search" name="q">
+        <br>
+        <!-- CHECKBOX - allows multiple selections-->
+        <label>
+            <input type="checkbox" name=" skills" value="html">HTML
+        </label>
+        <label>
+            <input type="checkbox" name="skills" value="css">CSS
+        </label>
+        <label>
+            <input type="checkbox" name="skills" value="javascript">JavaScript
+        </label>
+        <br>
+        <!-- RADIO BUTTONS - allows only one option to be selected -->
+        <label>
+            <input type="radio" name="gender" value="male">Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">Female
+        </label>
+        <br>
+        <!-- FILE - allows user to select file from device-->
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" name="resume">
+        <br>
+        <!-- HIDDEN - user doesn't see this input, 
+           but its value can be included when form is submitted  -->
+        <input type="hidden" name="user_id" value="12345">
+    </body>
+</html>
