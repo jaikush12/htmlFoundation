@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- <textarea> - used when the user needs to enter multiple lines of text 
+            It has both opening an closing tag unlike <input> -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" row="5" cols="30"></textarea>
+        <br>
+        <!-- <select> - creates a dropdown -->
+        <label for="city">City</label>
+        <select id="city" name="city">
+            <option value="Select">Select your city</option>
+            <option value="Gurugram">Gurugram</option>
+            <option value="Delhi">Delhi</option>
+            <option value="bangalore">Bangalore</option>
+        </select>
+        <br>
+        <!-- <optgroup> - useful when a dropdown has categories of options -->
+        <select name="course">
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="node">Node.js</option>
+                <option value="python">Python</option>
+            </optgroup>
+        </select>
+        <!-- <fieldset> - useful for logically grouping sections of a form -->
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+        <!-- <legend> - gives a description/title to a <fieldset> -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </fieldset>    
+        <hr>
+        <h3>Form Validation</h3>
+        <!-- It means checking whether the user's input meets the rules you specify -->
+        <!-- required - restricts the user to sub -->
+        <label for="name2">Name</label>
+        <input type="text" id="name2" name="name"required>
+        <br>
+        <!-- minlength & maxlength - Control the number of characters in text input -->
+         <label for="username">Username</label>
+        <input type="text" id="username" name="username" minlength="3" maxlength="20">
+        <br>
+        <!-- min & max - Mainly used for numeric/date/time-type inputs -->
+         <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="60">
+        <br>
+        <!-- pattern - lets you specify a regular expression that the input must match -->
+         <label for="username2">Name</label>
+        <input type="text" id="username2" name="username" pattern="[A-Za-z]"required>
+        <br>
+        <!-- EMAIL VALIDATION -->
+        <input type="email" name="email"required>
+        <br>
+        <!-- disabled - a disabled input cannot normally be interacted with or edited(not submitted in form) -->
+        <input type="text" name="username" value="Jai"disabled>
+        <br>
+        <!-- readonly means user can see the value but can't edit it(submitted in form) -->
+        <input type="text" name="username" value="Jai"readonly>
+    </body>
+</html>

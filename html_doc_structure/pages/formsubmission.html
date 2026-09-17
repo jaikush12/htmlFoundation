@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Submission</h1>
+    <!-- action - specifies where the form data should be sent -->
+    <form action="/signup">\</form>
+    <!-- method - specifies how the broser sends the data -->
+    <!-- 2 methods - 1. method="POST" 2. method="GET" -->
+    <!-- GET -->
+    <form action="/search" method="GET">
+        <input type="search" name="q">
+        <button type="submit">Search</button>
+    </form>
+    <!-- If user enters MERN, the browser can create a URL like - 
+        /search?q=MERN  GET data is commonly represented in URL as query parameters.-->
+        <!-- Hence, commonly used for Search, Filtering, Sorting, Pages that can be bookmarked/shared -->
+        <!-- Example - /products?category=phones&sort=price -->
+    <!-- POST -->
+    <form action="/signup" method="POST">
+        <input type="text" name="username">
+        <input type="password" name="password">
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <!-- Form data is sent in request body, rather than appending to the URL as normal query string -->
+     <!-- Commonly used when sending data to create or modify soomething such as:
+            Signup, Login, Creating a Post, Submitting and order, Updating Information -->
+    <h2>Registration Example</h2>
+    <form action="/register" method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Create Account</button>
+    </form>
+</body>
+</html>
